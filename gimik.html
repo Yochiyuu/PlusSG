@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlusSG</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <!-- Shortcut icon-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.instagram.com/dru.rei/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ndru.rei.3"><i class="fab fa-facebook"></i></a></li>  
+                <li><a href="https://t.me/yochiyuu"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://wa.me/6285163691318"><i class="fab fa-whatsapp"></i></a></li>
+                
+            </ul>
+        </div>   
+        </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+           <h1><a href="index.html">PlusSG</a></h1>
+           <nav>
+               <ul>      
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="product.html">Product</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li class="active"><a href="gimik.html">Payment</a></li>
+
+               </ul>    
+           </nav>
+       </div>
+        <div class="container">
+          <h1 style="margin:10px;">Pembayaran</h1>
+          <form class="" action="gimik.html" method="post">
+            <input required class="input-form laf" type="text" name="" value="" placeholder="Nama">
+            <input required class="input-form laf" type="number" name="" value="" placeholder="62+..">
+            <input required class="input-form-number laf" type="number" name="" value="1" placeholder="Jumlah" ng-model="jumlah">
+            <input required class="input-form-number laf" type="number" name="" value="20000" ng-model="harga">
+            <input disabled required class="input-form-value" type="number" name="" value="{{jumlah*harga}}" placeholder="Hasil" ng-model="Hasil">
+            <textarea class="input-form" cols="5" rows="5" name="comment" placeholder="Catatan" required></textarea>
+            </textarea>
+      
+            <div style="overflow-x:auto;">
+              <label>Pilih Metode Pembayaran</label>
+              <table border=0 cellpadding="10">
+                <tr>
+                  <th><input type="checkbox"  value=""><img src="img/bni.png" width="60px" height="20px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/logo-bca.png" width="60px" height="20px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/bri.png" width="60px" height="25px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/bjb.png" width="60px" height="30px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/bankdki.png" width="60px" height="25px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/bankbb.png" width="60px" height="20px"></th>
+                </tr>
+                <tr>
+                  <th><input type="checkbox"  value=""><img src="img/visa.png" width="60px" height="30px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/masterc.png" width="60px" height="30px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/paypal.png" width="60px" height="20px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/alfa.jpg" width="70px" height="50px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/indomaret.png" width="60px" height="20px"></th>
+                  <th><input type="checkbox"  value=""><img src="img/gopay.jpg" width="65px" height="40px"></th>
+                </tr>
+              </table>
+            </div>
+            <button class="btn-form-pay">Bayar</button>
+            <button class="btn-form-change" id="myBtn">Batal</button>
+          </form>
+        </div>
+</body>
+</html>
